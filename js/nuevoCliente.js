@@ -1,3 +1,6 @@
+import { mostrarAlerta } from "./funciones.js";
+
+
 /* Funcion IIFE: Funciones que se ejecutan inmediatamente(Funcion autoejecutable)
 Se compone por dos partes: 
 1.- Una funcion anonima que impide accesar variables fuera del scope asi como contaminar el alcance global
@@ -24,10 +27,10 @@ Se compone por dos partes:
         }
 
         if(validar(cliente)){
-            console.log('Todos los campos son obligatorios');
+            mostrarAlerta('Todos los campos son obligatorios');
             return;
         }
-        console.log('Si se paso la validacion');
+        // console.log('Si se paso la validacion');
     }
 
     //Funcion que valida si el objeto que se pasa contiene valores -> Function that validates if the object contains any value
