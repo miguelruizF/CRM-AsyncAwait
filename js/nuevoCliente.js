@@ -1,5 +1,5 @@
 import { mostrarAlerta } from "./funciones.js";
-
+import { nuevoCliente } from "./API.js";
 
 /* Funcion IIFE: Funciones que se ejecutan inmediatamente(Funcion autoejecutable)
 Se compone por dos partes: 
@@ -31,6 +31,7 @@ Se compone por dos partes:
             return;
         }
         // console.log('Si se paso la validacion');
+        nuevoCliente(cliente);
     }
 
     //Funcion que valida si el objeto que se pasa contiene valores -> Function that validates if the object contains any value

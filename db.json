@@ -1,0 +1,18 @@
+{
+  "clientes": [
+    {
+      "nombre": "miguel angel",
+      "email": "later481@gmail.com",
+      "telefono": "2228327749",
+      "empresa": "FFT",
+      "id": 1
+    },
+    {
+      "nombre": "Juan",
+      "email": "haragan_321@hotmail.com",
+      "telefono": "2228327749",
+      "empresa": "DoS",
+      "id": 2
+    }
+  ]
+}
