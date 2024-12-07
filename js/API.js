@@ -1,5 +1,6 @@
 const url = 'http://localhost:4000/clientes';
 
+//Funcion para agregar un nuevo cliente -> Function to add a new customer
 export const nuevoCliente = async cliente => {
     // console.log(cliente);
     try {
@@ -13,5 +14,16 @@ export const nuevoCliente = async cliente => {
         window.location.href = '../../index.html';
     } catch (error) {
         console.error(error);
+    }
+}
+
+//Funcion para obtener todos los clientes -> Function to obtain all customers
+export const obtenerClientes = async() => {
+    try {
+        const resultado = await fetch(url);
+        const clientes =  await resultado.json();
+        return clientes;
+    } catch (error) {
+        console.log(error);
     }
 }
