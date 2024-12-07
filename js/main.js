@@ -1,9 +1,11 @@
-import { obtenerClientes } from "./API.js";
+import { obtenerClientes, eliminarCliente } from "./API.js";
 
 (function () {
     const listado = document.querySelector("#listado_cliente");
 
     document.addEventListener('DOMContentLoaded', mostrarClientes);
+
+    listado.addEventListener("click", confirmarEliminar);
 
     //Se detiene la ejecucion del codigo hasta que se cumpla la funcion obtenerClientes() -> The execution of the code is stopped until the obtenerClientes function is fulfilled
     async function mostrarClientes() {
@@ -32,6 +34,17 @@ import { obtenerClientes } from "./API.js";
             `;
             listado.appendChild(row);
         });
+    }
+
+    function confirmarEliminar(e) {
+        if(e.target.classList.contains("eliminar")){
+            const clienteId = parseInt(e.target.dataset.cliente);
+            // console.log(clienteId);
+            const confirmar = confirm("¿Deseas eliminar este registro?");
+            if(confirmar){
+                eliminarCliente(clienteId);
+            }
+        }
     }
 
     //Evento para ocultar la barra de navegacion -> Event to hide the navigation bar 

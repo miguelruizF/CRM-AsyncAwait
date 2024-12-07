@@ -6,20 +6,6 @@
       "telefono": "2228327749",
       "empresa": "FFT",
       "id": 1
-    },
-    {
-      "nombre": "Juan",
-      "email": "haragan_321@hotmail.com",
-      "telefono": "2228327749",
-      "empresa": "DoS",
-      "id": 2
-    },
-    {
-      "nombre": "Marcos",
-      "email": "correo-email@correo.com",
-      "telefono": "1231541235",
-      "empresa": "FFT México",
-      "id": 3
     }
   ]
 }
