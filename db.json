@@ -6,6 +6,13 @@
       "telefono": "2228327749",
       "empresa": "FFT",
       "id": 1
+    },
+    {
+      "nombre": "Jen",
+      "email": "correo@email.com",
+      "telefono": "2223598634",
+      "empresa": "DoS",
+      "id": 2
     }
   ]
 }
