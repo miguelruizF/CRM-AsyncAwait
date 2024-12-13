@@ -1,18 +1,18 @@
 {
   "clientes": [
     {
-      "nombre": "miguel angel",
-      "email": "later481@gmail.com",
-      "telefono": "2228327749",
-      "empresa": "FFT",
-      "id": 1
-    },
-    {
-      "nombre": "Jen",
+      "nombre": "Jen Marquez",
       "email": "correo@email.com",
       "telefono": "2223598634",
       "empresa": "DoS",
       "id": 2
+    },
+    {
+      "nombre": "Jose",
+      "email": "example@correo.com",
+      "telefono": "2352121321564",
+      "empresa": "MASS SA",
+      "id": 3
     }
   ]
 }

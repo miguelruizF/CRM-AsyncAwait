@@ -1,4 +1,4 @@
-import { mostrarAlerta } from "./funciones.js";
+import { mostrarAlerta, validar } from "./funciones.js";
 import { nuevoCliente } from "./API.js";
 
 /* Funcion IIFE: Funciones que se ejecutan inmediatamente(Funcion autoejecutable)
@@ -32,10 +32,5 @@ Se compone por dos partes:
         }
         // console.log('Si se paso la validacion');
         nuevoCliente(cliente);
-    }
-
-    //Funcion que valida si el objeto que se pasa contiene valores -> Function that validates if the object contains any value
-    function validar(obj) {
-        return !Object.values(obj).every(input => input !== '');
     }
 })();

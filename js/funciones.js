@@ -22,3 +22,8 @@ export function mostrarAlerta(mensaje) {
         }, 3000);
     }
 }
+
+//Funcion que valida si el objeto que se pasa contiene valores -> Function that validates if the object contains any value
+export function validar(obj) {
+    return !Object.values(obj).every(input => input !== '');
+}
